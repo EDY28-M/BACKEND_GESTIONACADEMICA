@@ -1,0 +1,272 @@
+[
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "GetCursos",
+    "RelativePath": "api/Cursos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API_REST_CURSOSACADEMICOS.DTOs.CursoDto, API_REST_CURSOSACADEMICOS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "PostCurso",
+    "RelativePath": "api/Cursos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cursoDto",
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.CursoCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.CursoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "GetCurso",
+    "RelativePath": "api/Cursos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.CursoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "PutCurso",
+    "RelativePath": "api/Cursos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cursoDto",
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.CursoUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "DeleteCurso",
+    "RelativePath": "api/Cursos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "GetCursosPorCiclo",
+    "RelativePath": "api/Cursos/PorCiclo/{ciclo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ciclo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API_REST_CURSOSACADEMICOS.DTOs.CursoDto, API_REST_CURSOSACADEMICOS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.CursosController",
+    "Method": "GetCursosPorDocente",
+    "RelativePath": "api/Cursos/PorDocente/{docenteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docenteId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API_REST_CURSOSACADEMICOS.DTOs.CursoDto, API_REST_CURSOSACADEMICOS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.DocentesController",
+    "Method": "GetDocentes",
+    "RelativePath": "api/Docentes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API_REST_CURSOSACADEMICOS.DTOs.DocenteDto, API_REST_CURSOSACADEMICOS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.DocentesController",
+    "Method": "PostDocente",
+    "RelativePath": "api/Docentes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "docenteDto",
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.DocenteCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.DocenteDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.DocentesController",
+    "Method": "GetDocente",
+    "RelativePath": "api/Docentes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.DocenteDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.DocentesController",
+    "Method": "PutDocente",
+    "RelativePath": "api/Docentes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "docenteDto",
+        "Type": "API_REST_CURSOSACADEMICOS.DTOs.DocenteUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_REST_CURSOSACADEMICOS.Controllers.DocentesController",
+    "Method": "DeleteDocente",
+    "RelativePath": "api/Docentes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "oXwsiEyaysXWdg+ufOhGi0UbAWN+O23eZ0zfOoRyorE=",
+  "Source": "API_REST_CURSOSACADEMICOS",
+  "BasePath": "_content/API_REST_CURSOSACADEMICOS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
