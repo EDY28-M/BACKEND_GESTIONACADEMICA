@@ -338,10 +338,10 @@ C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\staticwe
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.API_REST_CURSOSACADEMICOS.props
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.API_REST_CURSOSACADEMICOS.props
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\API_REST.B046C1FD.Up2Date
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\API_REST_CURSOSACADEMICOS.dll
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\refint\API_REST_CURSOSACADEMICOS.dll
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\API_REST_CURSOSACADEMICOS.pdb
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\API_REST_CURSOSACADEMICOS.genruntimeconfig.cache
 C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\obj\Debug\net8.0\ref\API_REST_CURSOSACADEMICOS.dll
+C:\Users\cater\Downloads\API_CURSOS\BACKEND_DEVELOMENT\bin\Debug\net8.0\appsettings.GCP.json
