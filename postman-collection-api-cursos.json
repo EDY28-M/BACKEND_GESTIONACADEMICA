@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "api-cursos-academicos-collection",
+		"name": "API Cursos Académicos",
+		"description": "Colección completa de endpoints para la API de Gestión Académica - Cursos y Docentes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Docentes",
+			"item": [
+				{
+					"name": "Obtener todos los docentes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Docentes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Docentes"
+							]
+						},
+						"description": "Obtiene la lista completa de docentes con sus cursos asignados"
+					}
+				},
+				{
+					"name": "Obtener docente por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Docentes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Docentes",
+								"1"
+							]
+						},
+						"description": "Obtiene un docente específico por su ID con sus cursos asignados"
+					}
+				},
+				{
+					"name": "Crear nuevo docente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apellidos\": \"García López\",\n    \"nombres\": \"Juan Carlos\",\n    \"profesion\": \"Ingeniero de Sistemas\",\n    \"fechaNacimiento\": \"1985-05-15\",\n    \"correo\": \"juan.garcia@universidad.edu\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Docentes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Docentes"
+							]
+						},
+						"description": "Crea un nuevo docente. El correo debe ser único."
+					}
+				},
+				{
+					"name": "Actualizar docente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apellidos\": \"García López\",\n    \"nombres\": \"Juan Carlos\",\n    \"profesion\": \"Ingeniero de Software Senior\",\n    \"fechaNacimiento\": \"1985-05-15\",\n    \"correo\": \"juan.garcia@universidad.edu\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Docentes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Docentes",
+								"1"
+							]
+						},
+						"description": "Actualiza los datos de un docente existente"
+					}
+				},
+				{
+					"name": "Eliminar docente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Docentes/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Docentes",
+								"1"
+							]
+						},
+						"description": "Elimina un docente. No se puede eliminar si tiene cursos asignados."
+					}
+				}
+			]
+		},
+		{
+			"name": "Cursos",
+			"item": [
+				{
+					"name": "Obtener todos los cursos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos"
+							]
+						},
+						"description": "Obtiene la lista completa de cursos con información del docente asignado"
+					}
+				},
+				{
+					"name": "Obtener curso por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos",
+								"1"
+							]
+						},
+						"description": "Obtiene un curso específico por su ID con información del docente"
+					}
+				},
+				{
+					"name": "Obtener cursos por docente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos/PorDocente/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos",
+								"PorDocente",
+								"1"
+							]
+						},
+						"description": "Obtiene todos los cursos asignados a un docente específico"
+					}
+				},
+				{
+					"name": "Obtener cursos por ciclo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos/PorCiclo/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos",
+								"PorCiclo",
+								"1"
+							]
+						},
+						"description": "Obtiene todos los cursos de un ciclo específico (1-10)"
+					}
+				},
+				{
+					"name": "Crear nuevo curso",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombreCurso\": \"Programación Web\",\n    \"creditos\": 4,\n    \"horasSemanal\": 6,\n    \"ciclo\": 5,\n    \"idDocente\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos"
+							]
+						},
+						"description": "Crea un nuevo curso. El docente debe existir si se especifica idDocente."
+					}
+				},
+				{
+					"name": "Actualizar curso",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombreCurso\": \"Programación Web Avanzada\",\n    \"creditos\": 5,\n    \"horasSemanal\": 8,\n    \"ciclo\": 5,\n    \"idDocente\": 2\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos",
+								"1"
+							]
+						},
+						"description": "Actualiza los datos de un curso existente"
+					}
+				},
+				{
+					"name": "Eliminar curso",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/Cursos/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Cursos",
+								"1"
+							]
+						},
+						"description": "Elimina un curso por su ID"
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000",
+			"type": "string",
+			"description": "URL base de la API. Cambiar según el ambiente (desarrollo, producción, etc.)"
+		}
+	]
+}
